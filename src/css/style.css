@@ -363,4 +363,49 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.button {
+  background-color: #ffc800;
+  outline: none;
+}
+
+.header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__link {
+  font-size: 16px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.header__contacts {
+  background-color: #f1f1f1;
+}
 /*# sourceMappingURL=style.css.map */
