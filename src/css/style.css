@@ -392,8 +392,10 @@ body {
 }
 
 .header {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  background-image: url("../img/header/header-bg.jpg");
+  background-position: center right;
+  background-size: 41%;
+  background-repeat: repeat-y;
 }
 
 .header__box {
@@ -406,6 +408,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header__logo {
+  margin-right: 55px;
 }
 
 .header__list {
@@ -416,14 +424,14 @@ body {
 
 .header__item {
   list-style: none;
-  margin-right: 30px;
+  margin-right: 26px;
 }
 
 .header__item::before {
   content: '|';
   font-size: 12px;
   color: #000000;
-  margin-right: 30px;
+  margin-right: 26px;
   opacity: 0.3;
 }
 
@@ -459,24 +467,34 @@ body {
 }
 
 .header__contacts {
-  padding-right: 0;
-  background-color: #f1f1f1;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 54px;
+  padding-right: 0;
   max-width: 400px;
+}
+
+.header__picture {
+  width: 18px;
+  height: 18px;
 }
 
 .header__phone {
   font-size: 18px;
-}
-
-.header__phone::before {
-  content: url(../img/header/phone.svg);
+  margin-left: 6px;
 }
 
 .header__button {
-  padding: 10px 16px;
+  padding: 8px 16px;
   margin-left: 43px;
+  margin-right: 0;
   font-size: 14px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;

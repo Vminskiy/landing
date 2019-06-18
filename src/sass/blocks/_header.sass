@@ -1,20 +1,26 @@
 .header
-  padding-top: 8px
-  padding-bottom: 8px
+  background-image: url('../img/header/header-bg.jpg')
+  background-position: center right
+  background-size:  41%
+  background-repeat: repeat-y
   &__box
     display: flex
     justify-content: space-between
     align-items: center
+    padding-top: 8px
+    padding-bottom: 8px
+  &__logo
+    margin-right: 55px
   &__list
     display: flex
   &__item
     list-style: none
-    margin-right: 30px
+    margin-right: 26px
     &::before
       content: '|'
       font-size: 12px
       color: $text-color-black
-      margin-right: 30px
+      margin-right: 26px
       opacity: 0.3
     &:first-child
       &::before
@@ -38,18 +44,22 @@
         background-color: $main-color
         transition: 0.2s
   &__contacts
-    padding-right: 0
-    background-color: $section-bg-color
-    width: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
     padding-left: 54px
+    padding-right: 0
     max-width: 400px
+  &__picture
+    width: 18px
+    height: 18px
   &__phone
     font-size: 18px
-    &::before
-      content: url(../img/header/phone.svg)
-
+    margin-left: 6px
   &__button
-    padding: 10px 16px
+    padding: 8px 16px
     margin-left: 43px
+    margin-right: 0
     font-size: 14px
     +reg
+
