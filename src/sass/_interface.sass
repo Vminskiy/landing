@@ -8,8 +8,14 @@ body
 .link
   text-decoration: none
   color: $text-color-black
-  +reg 
+  +reg
+  &:hover
+    cursor: pointer
 
 .button
   background-color: $main-color
   outline: none
+  border: none
+  &:hover
+    background-color: lighten($main-color, 10%)
+    cursor: pointer
