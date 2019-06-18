@@ -11,6 +11,13 @@
     padding-bottom: 8px
   &__logo
     margin-right: 55px
+  &__label
+    margin: 0 40px 0 0
+    font-size: 26px
+    line-height: 70px
+    display: none
+    width: 26px
+    float: right
   &__list
     display: flex
   &__item
@@ -62,4 +69,97 @@
     margin-right: 0
     font-size: 14px
     +reg
-
+#header__checkbox
+  display: none
+@media (max-width: 580px)
+  .header
+    background-size:  100%
+    &__box
+      margin: 0
+      justify-content: space-around
+    &__logo
+      margin-left: 20px
+      margin-right: 0px
+      order: -1
+    &__contacts
+      margin-left: -40px
+      order: -1
+    &__picture
+      display: none
+    &__phone
+      display: none
+    &__navbar
+      margin: auto
+      width: 200px
+      position: relative
+      color: white
+      text-align: center
+      height: 40px
+    &__label
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      z-index: 2
+      line-height: 40px
+    &__burger-line
+      position: absolute
+      top: 8px
+      right: 10px
+      width: 35px
+      height: 5px
+      background-color: $main-color
+      transition: 0.5s all
+    &__second, &__third
+      top: 18px
+    &__fourth
+      top: 28px
+    &__list
+      display: block
+      position: absolute
+      width: 100%
+      bottom: -15px
+      left: -50px
+      transform: translateY(100%)
+      max-height: 0
+      font-size: 0
+      overflow: hidden
+      transition: 0.5s all
+    &__item
+      display: block
+      margin: 0
+      &::before
+        display: none
+    &__link
+      display: block
+      width: 100%
+      padding: 10px
+      color: $text-color-black
+      border-top: 1px solid rgba(0,0,0,0.3)
+      background-color: $main-color
+      &:hover
+        display: none
+    &__button
+      padding: 6px 12px
+      font-size: 12px
+#header__checkbox:checked ~ .header__list
+  max-height: 500px
+  font-size: 16px
+#header__checkbox:checked ~ .header__first
+  display: none
+#header__checkbox:checked ~ .header__second
+  transform: rotate(45deg)
+#header__checkbox:checked ~ .header__third
+  transform: rotate(-45deg)
+#header__checkbox:checked ~ .header__fourth
+  display: none
+#header__checkbox:checked ~ .header__box
+  flex-wrap: wrap
+@media (max-width: 480px)
+  .header
+    &__logo
+      margin-left: 30px
+    &__contacts
+      display: none
