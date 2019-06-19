@@ -55,14 +55,22 @@
 
   <main class="main">
     <section class="section first">
-      <div class="container">
+      <div class="first__container">
         <div class="first__box">
           <div class="slider first__slider">
-
+            <div class="slider__item first__slider-item"><img src="img/first/image_1.jpg" alt="Монтаж бойлеров" class="first__slider-image">
+            </div>
+            <div class="slider__item first__slider-item"><img src="img/first/image_2.jpg" alt="Сантехника в ванную" class="first__slider-image">
+            </div>
+            <div class="slider__item first__slider-item"><img src="img/first/image_3.jpg" alt="Работы любой сложности" class="first__slider-image">
+            </div>
+            <div class="slider__item first__slider-item"><img src="img/first/image_4.jpg" alt="Современные технологии" class="first__slider-image">
+            </div>
           </div>
           <!-- /.slider first__slider -->
+          <div class="first__slider-cover"></div>
           <div class="first__info">
-
+        
           </div>
           <!-- /.first__info -->
         </div>
@@ -74,9 +82,36 @@
     <!-- /.section first -->
   </main>
   <!-- /.main -->
-  <script src="js/slick.min.js"></script>
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: false,
+        dots: true,
+        // responsive: [
+        //   {
+        //     breakpoint: 1200,
+        //     settings: {
+        //       slidesToShow: 2,
+        //       slidesToScroll: 1,
+        //     }
+        //   },
+        //   {
+        //     breakpoint: 768,
+        //     settings: {
+        //       slidesToShow: 1,
+        //       slidesToScroll: 1
+        //     }
+        //   }
+        // ]
+      });
+    });
+  </script>
 </body>
 </html>

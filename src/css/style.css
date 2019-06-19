@@ -535,6 +535,10 @@ body {
   }
 }
 
+.slider {
+  margin: auto;
+}
+
 .header {
   background-image: url("../img/header/header-bg.jpg");
   background-position: center right;
@@ -792,6 +796,7 @@ body {
     overflow: hidden;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
+    z-index: 2;
   }
   .header__item {
     display: block;
@@ -854,5 +859,67 @@ body {
   .header__contacts {
     display: none;
   }
+}
+
+.first {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.first__container {
+  width: 100%;
+}
+
+.first__slider-cover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  max-height: 740px;
+  top: 0;
+}
+
+.first__slider-image {
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+}
+
+.slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+.slick-dots li button {
+  background-color: #ffffff;
+  height: 20px;
+  width: 20px;
+  margin-right: 7px;
+  margin-left: 7px;
+  border: none;
+  text-indent: -9999px;
+  overflow: hidden;
+  outline: none;
+}
+
+.slick-active {
+  background-color: #ffc800;
 }
 /*# sourceMappingURL=style.css.map */
