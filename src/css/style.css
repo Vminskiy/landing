@@ -412,7 +412,14 @@ body {
 
 @media (max-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 768px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
     width: 95%;
   }
 }
@@ -427,7 +434,7 @@ body {
 .header {
   background-image: url("../img/header/header-bg.jpg");
   background-position: center right;
-  background-size: 41%;
+  background-size: 38%;
   background-repeat: repeat-y;
 }
 
@@ -546,6 +553,65 @@ body {
   display: none;
 }
 
+@media (max-width: 1200px) {
+  .header {
+    background-size: 40%;
+    background-repeat: repeat-y;
+  }
+  .header__logo {
+    margin-right: 15px;
+  }
+  .header__item {
+    margin-right: 25px;
+  }
+  .header__item::before {
+    display: none;
+  }
+  .header__contacts {
+    padding-left: 30px;
+  }
+  .header__button {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    background-size: 28%;
+  }
+  .header__logo {
+    margin-right: 15px;
+  }
+  .header__item {
+    margin-right: 20px;
+  }
+  .header__picture {
+    display: none;
+  }
+  .header__phone {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-size: 100%;
+  }
+  .header__item {
+    margin-right: 10px;
+  }
+  .header__contacts {
+    padding-left: 10px;
+  }
+  .header__link {
+    font-size: 14px;
+  }
+  .header__button {
+    padding: 8px 13px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 580px) {
   .header {
     background-size: 100%;
@@ -557,7 +623,7 @@ body {
   }
   .header__logo {
     margin-left: 20px;
-    margin-right: 0px;
+    margin-right: 20px;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -576,6 +642,7 @@ body {
   }
   .header__navbar {
     margin: auto;
+    margin-right: 10px;
     width: 200px;
     position: relative;
     color: white;
@@ -636,6 +703,7 @@ body {
     color: #000000;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     background-color: #ffc800;
+    font-size: 14px;
   }
   .header__link:hover {
     display: none;
@@ -677,6 +745,7 @@ body {
 @media (max-width: 480px) {
   .header__logo {
     margin-left: 30px;
+    margin-right: 10px;
   }
   .header__contacts {
     display: none;
