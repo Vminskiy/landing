@@ -473,6 +473,34 @@ body {
   margin: auto;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 768px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 580px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    max-width: 540px;
+    width: 95%;
+  }
+}
+
 .link {
   text-decoration: none;
   color: #000000;
@@ -504,34 +532,6 @@ body {
 @media (max-width: 992px) {
   .button:hover {
     display: none;
-  }
-}
-
-@media (max-width: 1200px) {
-  .container {
-    max-width: 992px;
-    width: 95%;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    max-width: 768px;
-    width: 95%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    max-width: 580px;
-    width: 95%;
-  }
-}
-
-@media (max-width: 580px) {
-  .container {
-    max-width: 540px;
-    width: 95%;
   }
 }
 
@@ -822,9 +822,6 @@ body {
     background-color: #ffc800;
     font-size: 14px;
   }
-  .header__link:hover {
-    display: none;
-  }
   .header__button {
     padding: 6px 12px;
     font-size: 12px;
@@ -1026,6 +1023,69 @@ body {
     padding: 12px 33px;
     margin-top: 40px;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first__info {
+    top: 25px;
+    margin-left: 10%;
+    margin-right: 7%;
+  }
+  .first__title {
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .first__subtitle {
+    font-size: 18px;
+  }
+  .first__button {
+    padding: 11px 30px;
+    margin-top: 25px;
+    font-size: 15px;
+  }
+  .slick-dots {
+    bottom: -5px;
+  }
+  .slick-dots li button {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 580px) {
+  .first {
+    height: 100%;
+  }
+  .first__info {
+    top: 15px;
+    margin-left: 10%;
+    margin-right: 7%;
+  }
+  .first__title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .first__subtitle {
+    font-size: 10px;
+  }
+  .first__button {
+    padding: 8px 18px;
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  .slick-dots {
+    right: 0;
+    left: 180px;
+    bottom: -10px;
+  }
+  .slick-dots li button {
+    height: 5px;
+    width: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
