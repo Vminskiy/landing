@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'Proxima Nova Semibold';
-  src: url("../fonts/ProximaNova/ProximaNova-Semidbold.eot");
-  src: url("../fonts/ProximaNova/ProximaNova-Semidbold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semidbold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semidbold.ttf") format("truetype");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: auto;
@@ -539,6 +539,14 @@ body {
   margin: auto;
 }
 
+.title {
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+  color: #020202;
+  font-size: 28px;
+}
+
 .header {
   background-image: url("../img/header/header-bg.jpg");
   background-position: center right;
@@ -884,15 +892,57 @@ body {
   width: 100%;
 }
 
-.slider {
+.first__slider {
   position: relative;
+}
+
+.first__info {
+  position: absolute;
+  top: 180px;
+  margin-left: 364px;
+}
+
+.first__title {
+  color: #ffc800;
+  font-size: 35px;
+  margin-bottom: 11px;
+  letter-spacing: 0.3px;
+}
+
+.first__subtitle {
+  display: block;
+  color: #fffffe;
+  font-size: 35px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.first__text {
+  margin-top: 25px;
+  max-width: 1150px;
+  color: #fffffe;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  opacity: 0.42;
+}
+
+.first__button {
+  padding: 14px 38px;
+  margin-top: 27px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 .slick-dots {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 45px;
+  bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

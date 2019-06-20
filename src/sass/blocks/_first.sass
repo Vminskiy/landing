@@ -13,13 +13,42 @@
     top: 0
   &__slider-image
     width: 100%
-.slider
-  position: relative
+  &__slider
+    position: relative
+  &__info
+    position: absolute
+    top: 180px
+    margin-left: 364px
+  &__title
+    color: $main-color
+    font-size: 35px
+    margin-bottom: 11px
+    letter-spacing: 0.3px
+  &__subtitle
+    display: block
+    color: $text-color-white
+    font-size: 35px
+    +reg
+  &__text
+    margin-top: 25px
+    max-width: 1150px
+    color: $text-color-white
+    +reg
+    font-size: 20px
+    line-height: 28px
+    opacity: 0.42
+  &__button
+    padding: 14px 38px
+    margin-top: 27px
+    +semibold
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 0.4px
 .slick-dots
   position: absolute
   left: 0
   right: 0
-  bottom: 45px
+  bottom: 30px
   display: flex
   padding: 0
   justify-content: center
