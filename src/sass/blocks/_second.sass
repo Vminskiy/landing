@@ -1,4 +1,91 @@
 .second
+  position: relative
   background: $section-bg-color
-  height: 100px
   margin-top: 133px
+  &__title
+    position: absolute
+    left: 18%
+    top: -50px
+  &__box
+    padding-top: 104px
+    padding-bottom: 99px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    flex-direction: flex-start
+  &__card
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 32%
+    max-width: 377px
+    height: 236px
+    margin-right: 1%
+    margin-bottom: 21px
+    background-size: cover
+    background-repeat: no-repeat
+    filter: none
+    &:hover
+      filter: grayscale(100%)
+      transition: 1s
+    &-title
+      display: inline-block
+      max-width: 250px
+      +reg
+      font-size: 20px
+      color: $text-color-white
+      margin-bottom: 32px
+    &-subtitle
+      display: inline-block
+      padding: 11px 19px
+      background: $main-color
+      text-transform: uppercase
+      font-size: 15px
+      +reg
+      &:hover
+        background: $text-color-black
+        z-index: -2
+    &-price
+      position: absolute
+      bottom: 70px
+      font-size: 15px
+      +reg
+      color: $text-color-white
+      z-index: -1    
+.card
+  &-one
+    background: url('../img/second/battery.jpg')
+  &-two
+    background: url('../img/second/repair.jpg')
+  &-three
+    background: url('../img/second/tube.jpg')
+  &-four
+    background: url('../img/second/battery.jpg')
+  &-five
+    background: url('../img/second/repair.jpg')
+  &-six
+    background: url('../img/second/tube.jpg')
+@media (max-width: 1200px)
+  .second 
+    &__box
+      justify-content: space-around
+    &__card
+      width: 377px
+@media (max-width: 992px)
+  .second
+    margin-top: 80px
+    &__title
+      left: 35%
+@media (max-width: 768px)
+  .second
+    &__box
+      justify-content: center
+    &__title
+      left: 30%
+@media (max-width: 580px)
+  .second
+    &__title
+      left: 18%

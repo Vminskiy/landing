@@ -547,6 +547,23 @@ body {
   font-size: 28px;
 }
 
+.section-title {
+  display: inline-block;
+  padding: 15px 67px;
+  background: #ffc800;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    padding: 14px 63px;
+    font-size: 23px;
+  }
+}
+
 .header {
   background-image: url("../img/header/header-bg.jpg");
   background-position: center right;
@@ -965,6 +982,7 @@ body {
   text-indent: -9999px;
   overflow: hidden;
   outline: none;
+  cursor: pointer;
 }
 
 .slick-active button {
@@ -1100,8 +1118,160 @@ body {
 }
 
 .second {
+  position: relative;
   background: #f1f1f1;
-  height: 100px;
   margin-top: 133px;
+}
+
+.second__title {
+  position: absolute;
+  left: 18%;
+  top: -50px;
+}
+
+.second__box {
+  padding-top: 104px;
+  padding-bottom: 99px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: flex-start;
+          flex-direction: flex-start;
+}
+
+.second__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 32%;
+  max-width: 377px;
+  height: 236px;
+  margin-right: 1%;
+  margin-bottom: 21px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.second__card:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.second__card-title {
+  display: inline-block;
+  max-width: 250px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fffffe;
+  margin-bottom: 32px;
+}
+
+.second__card-subtitle {
+  display: inline-block;
+  padding: 11px 19px;
+  background: #ffc800;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+}
+
+.second__card-subtitle:hover {
+  background: #000000;
+  z-index: -2;
+}
+
+.second__card-price {
+  position: absolute;
+  bottom: 70px;
+  font-size: 15px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  color: #fffffe;
+  z-index: -1;
+}
+
+.card-one {
+  background: url("../img/second/battery.jpg");
+}
+
+.card-two {
+  background: url("../img/second/repair.jpg");
+}
+
+.card-three {
+  background: url("../img/second/tube.jpg");
+}
+
+.card-four {
+  background: url("../img/second/battery.jpg");
+}
+
+.card-five {
+  background: url("../img/second/repair.jpg");
+}
+
+.card-six {
+  background: url("../img/second/tube.jpg");
+}
+
+@media (max-width: 1200px) {
+  .second__box {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .second__card {
+    width: 377px;
+  }
+}
+
+@media (max-width: 992px) {
+  .second {
+    margin-top: 80px;
+  }
+  .second__title {
+    left: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+  .second__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .second__title {
+    left: 30%;
+  }
+}
+
+@media (max-width: 580px) {
+  .second__title {
+    left: 18%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
