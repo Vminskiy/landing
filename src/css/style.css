@@ -730,12 +730,12 @@ body {
 
 @media (max-width: 580px) {
   .header {
+    max-width: 580px;
+    width: 100%;
     background-size: 100%;
   }
   .header__box {
     margin: 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
   .header__logo {
     margin-left: 20px;
@@ -957,7 +957,6 @@ body {
 }
 
 .slick-dots li button {
-  background-color: #ffffff;
   height: 20px;
   width: 20px;
   margin-right: 7px;
@@ -968,7 +967,7 @@ body {
   outline: none;
 }
 
-.slick-active {
+.slick-active button {
   background-color: #ffc800;
 }
 
@@ -1057,7 +1056,19 @@ body {
 
 @media (max-width: 580px) {
   .first {
-    height: 100%;
+    height: 297px;
+    width: 100%;
+  }
+  .first__slider-cover {
+    width: 768px;
+    height: 297px;
+  }
+  .first__slider-image {
+    width: 768px;
+  }
+  .first__slider {
+    width: 768px;
+    height: 500px;
   }
   .first__info {
     top: 15px;
@@ -1065,27 +1076,32 @@ body {
     margin-right: 7%;
   }
   .first__title {
-    font-size: 12px;
+    font-size: 21px;
     margin-bottom: 10px;
   }
   .first__subtitle {
-    font-size: 10px;
+    font-size: 16px;
   }
   .first__button {
     padding: 8px 18px;
     margin-top: 15px;
-    font-size: 10px;
+    font-size: 13px;
   }
   .slick-dots {
-    right: 0;
-    left: 180px;
-    bottom: -10px;
+    left: -300px;
+    top: 240px;
   }
   .slick-dots li button {
-    height: 5px;
+    height: 15px;
     width: 5px;
     margin-right: 5px;
     margin-left: 5px;
   }
+}
+
+.second {
+  background: #f1f1f1;
+  height: 100px;
+  margin-top: 133px;
 }
 /*# sourceMappingURL=style.css.map */

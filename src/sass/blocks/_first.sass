@@ -58,7 +58,6 @@
   & li
     list-style: none
   & li button
-    background-color: #ffffff
     height: 20px
     width: 20px
     margin-right: 7px
@@ -67,8 +66,8 @@
     text-indent: -9999px
     overflow: hidden
     outline: none
-.slick-active
-  background-color: $main-color
+.slick-active button
+    background-color: $main-color
 @media (max-width: 1200px)
   .first
     &__info
@@ -133,26 +132,34 @@
       margin-left: 5px
 @media (max-width: 580px)
   .first
-    height: 100%
+    height: 297px
+    width: 100%
+    &__slider-cover
+      width: 768px
+      height: 297px
+    &__slider-image
+      width: 768px
+    &__slider
+      width: 768px
+      height: 500px
     &__info
       top: 15px
       margin-left: 10%
       margin-right: 7%
     &__title
-      font-size: 12px
+      font-size: 21px
       margin-bottom: 10px
     &__subtitle
-      font-size: 10px
+      font-size: 16px
     &__button
       padding: 8px 18px
       margin-top: 15px
-      font-size: 10px
+      font-size: 13px
   .slick-dots
-    right: 0
-    left: 180px
-    bottom: -10px
+    left: -300px
+    top: 240px
     & li button
-      height: 5px
+      height: 15px
       width: 5px
       margin-right: 5px
       margin-left: 5px
