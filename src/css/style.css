@@ -472,6 +472,30 @@ template {
   display: none;
 }
 
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1211,12 +1235,15 @@ body {
 
 .second__card-subtitle:hover {
   background: #000000;
-  z-index: -2;
+  opacity: 0;
 }
 
 .second__card-price {
   position: absolute;
-  bottom: 70px;
+  display: inline-block;
+  padding: 10px 30px;
+  background: #000000;
+  bottom: 59px;
   font-size: 15px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
@@ -1321,7 +1348,7 @@ body {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   padding-top: 91px;
-  padding-bottom: 95px;
+  padding-bottom: 80px;
 }
 
 .third__card {
@@ -1336,11 +1363,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 198px;
+  height: 115px;
   margin-bottom: 36px;
   background: #fffffe;
   padding-top: 20px;
   padding-bottom: 38px;
   padding-right: 0;
+  -webkit-animation: fadein 4s linear;
+          animation: fadein 4s linear;
 }
 
 .third__card-image {
