@@ -1,0 +1,44 @@
+.sixth
+  position: relative
+  &__container
+    position: absolute
+    top: 140px
+    left: 370px
+    width: 397px
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__form-box
+    width: 397px
+    padding-top: 50px
+    padding-bottom: 50px
+    background: $card-bg-color
+    display: flex
+    flex-direction: column
+    align-items: center
+    box-shadow: 5px 3px 4px 2px grey
+  &__form-title
+    margin-bottom: 40px
+    +semibold
+    font-size: 24px
+    color: $text-color-main
+    text-transform: uppercase
+  &__form-span
+    color: $main-color
+  &__form-input
+    width: 305px
+    margin-bottom: 30px
+    +reg
+    font-size: 16px
+    outline: none
+    border: none
+    border-bottom: 1px solid black
+    font-style: italic
+  &__form-button
+    +reg
+    font-size: 20px
+    padding: 20px 57px
+    margin-top: 15px
+    text-transform: uppercase
+    
