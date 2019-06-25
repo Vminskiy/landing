@@ -71,3 +71,40 @@
     line-height: 25px
     color: $text-color-main
   
+@media (max-width: 992px)
+  .third
+    background-size: 100%
+    &__box
+      flex-direction: column
+    &__card-box
+      flex-basis: 100%
+      padding-bottom: 0
+
+@media (max-width: 992px)
+  .third
+    &__card-box
+      justify-content: space-around
+      padding-top: 91px
+      padding-bottom: 0
+    &__info
+      margin-left: 0px
+      padding-top: 0px
+
+@media (max-width: 480px)
+  .third
+    &__container
+      margin-top: 80px
+    &__card
+      width: 100%
+      max-width: 198px
+      margin-left: 10px
+      margin-right: 10px
+    &__card-box
+      padding-top: 60px
+    &__info
+      padding-left: 10px
+    &__item
+      margin-bottom: 30px
+    &__text
+      font-size: 18px
+      line-height: 20px

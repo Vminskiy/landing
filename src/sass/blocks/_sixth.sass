@@ -41,4 +41,33 @@
     padding: 20px 57px
     margin-top: 15px
     text-transform: uppercase
-    
+
+@media (max-width: 1200px)
+  .sixth
+    &__container
+      left: 200px
+
+@media (max-width: 992px)
+  .sixth
+    background: $section-bg-color
+    &__container
+      position: static
+      margin-top: 20px
+    &__form-box
+      box-shadow: none
+
+@media (max-width: 480px)
+  .sixth
+    background: $section-bg-color
+    &__container
+      width: 300px
+    &__form-box
+      width: 300px
+      padding-top: 30px
+      padding-bottom: 50px
+    &__form-input
+      width: 250px
+      font-size: 14px
+    &__form-button
+      font-size: 16px
+      padding: 18px 52px

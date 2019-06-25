@@ -89,3 +89,25 @@
     cursor: pointer
 .slick-active button
     background-color: $main-color
+
+@media (max-width: 1200px)
+  .fourth
+    &__item-box
+      flex-direction: column
+    &__image-container
+      margin-top: 30px
+    &__icon-box
+      margin-bottom: 100px
+
+@media (max-width: 580px)
+  .fourth
+    margin-top: 80px
+    &__slider-info
+      font-size: 16px
+      width: 300px
+    &__image-container
+      margin-top: 50px
+    &__icon-box
+      margin-bottom: 70px
+    .slick-dots
+      top: 390px
