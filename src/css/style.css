@@ -1718,4 +1718,114 @@ body {
   font-size: 20px;
   text-transform: uppercase;
 }
+
+.footer {
+  padding-top: 58px;
+  padding-bottom: 58px;
+  background: #000000;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__address-image {
+  width: 15px;
+  height: 21px;
+  margin-right: 13px;
+}
+
+.footer__address-text {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fffffe;
+  cursor: pointer;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.footer__social-box:hover {
+  background-color: #ffc800;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__social-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__picture {
+  margin-left: 30px;
+  width: 20px;
+  height: 14px;
+}
+
+.footer__picture::before {
+  content: '|';
+  font-size: 12px;
+  color: #fffffe;
+}
+
+.footer__picture:first-child::before {
+  display: none;
+}
+
+.footer__link {
+  margin-left: 6px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  color: #fffffe;
+  text-decoration: none;
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
