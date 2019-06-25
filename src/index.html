@@ -21,19 +21,19 @@
             <div class="header__burger-line header__fourth"></div>
             <ul class="header__list">
               <li class="header__item">
-                <a href="" class="header__link link">Услуги</a>
+                <a href="#services" class="header__link link">Услуги</a>
               </li>
               <li class="header__item">
-                <a href="" class="header__link link">Цены</a>
+                <a href="#price" class="header__link link">Цены</a>
                </li>
                <li class="header__item">
-                <a href="" class="header__link link">Отзывы</a>
+                <a href="#feedback" class="header__link link">Отзывы</a>
               </li>
               <li class="header__item">
-                <a href="" class="header__link link">Новости</a>
+                <a href="#news" class="header__link link">Новости</a>
               </li>
               <li class="header__item">
-                <a href="" class="header__link link">Контакты</a>
+                <a href="#contacts" class="header__link link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -88,7 +88,7 @@
 
     <section class="section second">
       <div class="container second__container">
-        <h2 class="second__title section-title">услуги</h2>
+        <h2 class="second__title section-title" id="services">услуги</h2>
         <!-- /second__title title -->
         <div class="second__box">
           <div class="second__card card-one">
@@ -141,7 +141,7 @@
 
     <section class="section third">
       <div class="container third__container">
-        <h2 class="third__title section-title">Почему мы?</h2>
+        <h2 class="third__title section-title" id="price">Почему мы?</h2>
         <!-- /.third__title section-title -->
         <div class="third__box">
           <div class="third__card-box">
@@ -210,7 +210,7 @@
 
     <section class="section fourth">
       <div class="container fourth__container">
-        <h2 class="fourth__title section-title">отзывы</h2>
+        <h2 class="fourth__title section-title" id="feedback">отзывы</h2>
         <!-- /.fourth__title section-title -->
         <div class="slider fourth__slider">
           <div class="slider__item fourth__slider-item">
@@ -360,7 +360,7 @@
 
     <section class="section fifth">
       <div class="container fifth__container">
-        <h2 class="fifth__title section-title">новости</h2>
+        <h2 class="fifth__title section-title" id="news">новости</h2>
         <!-- /.fifth__title section-title -->
         <div class="fifth__box">
           <div class="fifth__card">
@@ -415,9 +415,9 @@
       <div class="container sixth__container">
         <div class="sixth__form-box">
           <h3 class="sixth__form-title">оставьте <span class="sixth__form-span">заявку</span></h3>
-          <form action="#" class="sixth__form" id="sixth__form">
+          <form action="#" class="sixth__form" id="sixth-form">
           <input type="text" name="username" placeholder="Введите Ваше имя" class="sixth__form-input">
-          <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" class="sixth__form-input">
+          <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" class="sixth__form-input phone">
           <button class="sixth__form-button button">заказать  звонок</button>
         </form>
       </div>
@@ -445,7 +445,7 @@
             </div>
           </div>
           <!-- /.footer__social -->
-          <div class="footer__contacts">
+          <div class="footer__contacts" id="contacts">
               <img src="img/footer/envelope.svg" alt="Наш почтовый адрес" class="footer__picture">
               <a href="mailto:infosanteh@gmail.com" class="footer__link">infosanteh@gmail.com</a>
               <img src="img/footer/phone.svg" alt="Наш телефон" class="footer__picture">
@@ -479,6 +479,29 @@
         arrows: false,
         dots: true,
       });
+      $('#sixth-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15,
+          },
+          phone: {
+            required: true,
+          },
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: "Введите имя из более чем двух символов",
+            maxlength: "Введите имя из менее чем пятнадцати символов",
+          },
+          phone: {
+            required: "Заполните поле",
+          },
+        }
+      });
+      $('.phone').mask('8 (999) 999-99-99');
     });
   </script>
 </body>
