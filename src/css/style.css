@@ -1593,4 +1593,21 @@ body {
 .slick-active button {
   background-color: #ffc800;
 }
+
+.fifth {
+  margin-top: 145px;
+  position: relative;
+  background: #f1f1f1;
+}
+
+.fifth__title {
+  position: absolute;
+  left: 18%;
+  top: -50px;
+  padding: 14px 50px;
+}
+
+.fifth__box {
+  padding-top: 87px;
+}
 /*# sourceMappingURL=style.css.map */
