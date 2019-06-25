@@ -1596,8 +1596,22 @@ body {
 
 .fifth {
   margin-top: 145px;
+  padding-bottom: 76px;
   position: relative;
   background: #f1f1f1;
+}
+
+.fifth__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .fifth__title {
@@ -1609,5 +1623,99 @@ body {
 
 .fifth__box {
   padding-top: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fifth__card {
+  width: 30%;
+}
+
+.fifth__image {
+  width: 377px;
+  height: 279px;
+}
+
+.fifth__image-one {
+  background: url("../img/fifth/repair-one.jpg");
+}
+
+.fifth__image-two {
+  background: url("../img/fifth/repair-two.jpg");
+}
+
+.fifth__image-three {
+  background: url("../img/fifth/repair-three.jpg");
+}
+
+.fifth__name {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fifth__subtitle {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #020202;
+  text-transform: uppercase;
+}
+
+.fifth__subtitle:hover {
+  text-decoration: underline;
+}
+
+.fifth__date {
+  padding-right: 40px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #020202;
+}
+
+.fifth__number {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 400;
+  background: #ffc800;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-bottom: 3px;
+  color: #020202;
+}
+
+.fifth__text {
+  display: block;
+  width: 330px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #020202;
+  line-height: 28px;
+}
+
+.fifth__text:hover {
+  text-decoration: underline;
+}
+
+.fifth__button {
+  margin-top: 70px;
+  padding: 16px 38px;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

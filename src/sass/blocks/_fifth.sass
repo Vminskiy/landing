@@ -1,7 +1,12 @@
 .fifth
   margin-top: 145px
+  padding-bottom: 76px
   position: relative
   background: $section-bg-color
+  &__container
+    display: flex
+    flex-direction: column
+    align-items: center
   &__title
     position: absolute
     left: 18%
@@ -9,3 +14,56 @@
     padding: 14px 50px
   &__box
     padding-top: 87px
+    display: flex
+    justify-content: space-between
+  &__card
+    width: 30%
+  &__image
+    width: 377px
+    height: 279px  
+    &-one
+      background: url('../img/fifth/repair-one.jpg')
+    &-two
+      background: url('../img/fifth/repair-two.jpg')
+    &-three
+      background: url('../img/fifth/repair-three.jpg')
+  &__name
+    margin-top: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__subtitle
+    +semibold
+    font-size: 20px
+    color: $text-color-main
+    text-transform: uppercase
+    &:hover
+      text-decoration: underline
+  &__date
+    padding-right: 40px
+    +reg
+    font-size: 16px
+    text-transform: uppercase
+    color: $text-color-main
+  &__number
+    +semibold
+    background: $main-color
+    padding-right: 3px
+    padding-left: 3px
+    padding-bottom: 3px
+    color: $text-color-main
+  &__text
+    display: block
+    width: 330px
+    +reg
+    font-size: 18px
+    color: $text-color-main
+    line-height: 28px
+    &:hover
+      text-decoration: underline
+  &__button
+    margin-top: 70px
+    padding: 16px 38px
+    +reg
+    font-size: 20px
+    text-transform: uppercase
