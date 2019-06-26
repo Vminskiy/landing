@@ -136,12 +136,16 @@
     height: 297px
     width: 100%
     &__slider-cover
-      width: 580px
+      width: 100%
+      max-width: 580px
       height: 297px
     &__slider-image
-      width: 768px
-    &__slider
+      width: 100%
       width: 580px
+      height: 297px
+    &__slider
+      width: 100%
+      max-width: 580px
       height: 500px
     &__info
       top: 15px
@@ -163,3 +167,35 @@
       width: 5px
       margin-right: 5px
       margin-left: 5px
+      
+@media (max-width: 480px)
+  .first
+    &__slider-cover
+      width: 100%
+      max-width: 480px
+    &__slider-image
+      width: 100%
+      width: 480px
+    &__slider
+      width: 100%
+      max-width: 480px
+      height: 500px
+    &__text
+      width: 100%
+      max-width: 480px
+
+@media (max-width: 320px)
+  .first
+    &__slider-cover
+      width: 100%
+      max-width: 320px
+    &__slider-image
+      width: 100%
+      width: 320px
+    &__slider
+      width: 100%
+      max-width: 320px
+      height: 500px
+    &__text
+      width: 100%
+      max-width: 320px

@@ -499,6 +499,8 @@ template {
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -1105,14 +1107,18 @@ body {
     width: 100%;
   }
   .first__slider-cover {
-    width: 580px;
+    width: 100%;
+    max-width: 580px;
     height: 297px;
   }
   .first__slider-image {
-    width: 768px;
+    width: 100%;
+    width: 580px;
+    height: 297px;
   }
   .first__slider {
-    width: 580px;
+    width: 100%;
+    max-width: 580px;
     height: 500px;
   }
   .first__info {
@@ -1140,6 +1146,46 @@ body {
     width: 5px;
     margin-right: 5px;
     margin-left: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first__slider-cover {
+    width: 100%;
+    max-width: 480px;
+  }
+  .first__slider-image {
+    width: 100%;
+    width: 480px;
+  }
+  .first__slider {
+    width: 100%;
+    max-width: 480px;
+    height: 500px;
+  }
+  .first__text {
+    width: 100%;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 320px) {
+  .first__slider-cover {
+    width: 100%;
+    max-width: 320px;
+  }
+  .first__slider-image {
+    width: 100%;
+    width: 320px;
+  }
+  .first__slider {
+    width: 100%;
+    max-width: 320px;
+    height: 500px;
+  }
+  .first__text {
+    width: 100%;
+    max-width: 320px;
   }
 }
 
@@ -1229,6 +1275,7 @@ body {
 .second__card-subtitle:hover {
   background: #000000;
   opacity: 0;
+  cursor: pointer;
 }
 
 .second__card-price {
@@ -1826,17 +1873,26 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .fifth__card {
+    margin-left: 120px;
+    margin-right: 120px;
     margin-bottom: 30px;
     padding-right: 50px;
     padding-left: 50px;
     width: 100%;
   }
+  .fifth_name {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 580px) {
   .fifth__card {
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 30px;
     width: 100%;
   }
@@ -1846,6 +1902,9 @@ body {
   }
   .fifth__text {
     width: 300px;
+  }
+  .fifth__date {
+    padding-right: 0;
   }
 }
 
@@ -2037,6 +2096,7 @@ body {
   background-color: #ffc800;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .footer__social-image {
@@ -2115,11 +2175,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .footer__contact-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-top: 15px;
   }
   .footer__social {
