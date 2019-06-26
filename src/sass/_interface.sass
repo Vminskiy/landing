@@ -28,13 +28,14 @@ body
 
 .link
   text-decoration: none
-  color: $text-color-black
   +reg
   &:hover
     cursor: pointer
-  @media (max-width: 992px)
+
+@media (max-width: 992px)
+  .link
     &:hover
-      display: none
+      cursor: default
 
 .button
   background-color: $main-color
@@ -43,7 +44,13 @@ body
   &:hover
     background-color: lighten($main-color, 10%)
     cursor: pointer
-  
+
+@media (max-width: 992px)
+  .button
+    &:hover
+      background-color: $main-color
+      cursor: default
+
 .slider
   margin: auto
 

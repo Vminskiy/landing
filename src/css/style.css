@@ -538,7 +538,6 @@ body {
 
 .link {
   text-decoration: none;
-  color: #000000;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
 }
@@ -549,7 +548,7 @@ body {
 
 @media (max-width: 992px) {
   .link:hover {
-    display: none;
+    cursor: default;
   }
 }
 
@@ -562,6 +561,13 @@ body {
 .button:hover {
   background-color: #ffd333;
   cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .button:hover {
+    background-color: #ffc800;
+    cursor: default;
+  }
 }
 
 .slider {
@@ -700,6 +706,7 @@ body {
 .header__phone {
   font-size: 18px;
   margin-left: 6px;
+  color: #020202;
 }
 
 .header__button {
@@ -1069,6 +1076,12 @@ body {
     padding: 12px 33px;
     margin-top: 40px;
     font-size: 15px;
+  }
+  .slick-dots li button {
+    cursor: default;
+  }
+  .slick-active button {
+    cursor: default;
   }
 }
 
@@ -2166,6 +2179,10 @@ body {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .footer__social-box:hover {
+    background-color: #fff;
+    cursor: default;
   }
   .footer__contacts {
     margin-top: 25px;
