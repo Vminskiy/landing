@@ -43,7 +43,7 @@
                   <img src="img/header/phone.svg" alt="Наш телефон" class="header__picture">
               </div>
               <a href="tel:+7(863)342-22-21" class="header__phone link">+7 (863) <b>342-22-21</b></a>
-              <button class="button header__button">Заказать звонок</button>
+              <button class="button header__button" id="button">Заказать звонок</button>
           </div>
           <!-- /.contacts -->
       </div>
@@ -75,7 +75,7 @@
             <p class="first__text">
               Наша бригада из 20 человек сделает всё быстро и недорого в самые кратчайшие сроки.Всё что Вам нужно это оставить заявку либо позвонить самому на указанный номер.Всего хорошего.
             </p>
-            <button class="button first__button">подробнее</button>
+            <button class="button first__button" id="first-button">подробнее</button>
           </div>
           <!-- /.first__info -->
         </div>
@@ -470,10 +470,26 @@
     <!-- /.footer -->
   </main>
   <!-- /.main -->
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <button class="modal-dialog__close" id="close">&times;</button>
+      <h4 class="modal-dialog__title">Оставьте заявку и мы Вам перезвоним</h4>
+      <form action="#" class="modal__form" id="modal-form">
+          <input type="text" name="username" placeholder="Введите Ваше имя" class="modal__form-input">
+          <input type="tel" name="phone" placeholder="Введите Ваш номер телефона" class="modal__form-input phone">
+          <button class="modal__form-button button">заказать  звонок</button>
+        </form>
+    </div>
+     <!-- /.modal-dialog -->
+  </div>
+    <!-- /.modal -->
+
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/main.js"></script>
   <script>
     $(document).ready(function(){
       $('.first__slider').slick({
@@ -490,6 +506,28 @@
         dots: true,
       });
       $('#sixth-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15,
+          },
+          phone: {
+            required: true,
+          },
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: "Введите имя из более чем двух символов",
+            maxlength: "Введите имя из менее чем пятнадцати символов",
+          },
+          phone: {
+            required: "Заполните поле",
+          },
+        }
+      });
+      $('#modal-form').validate({
         rules: {
           username: {
             required: true,
