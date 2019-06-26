@@ -1202,7 +1202,7 @@ body {
 }
 
 .second__box {
-  padding-top: 104px;
+  padding-top: 108px;
   padding-bottom: 99px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1374,8 +1374,8 @@ body {
 .third__title {
   position: absolute;
   left: 18%;
-  top: -50px;
-  padding: 16px 31px;
+  top: -55px;
+  padding: 16px 30px;
 }
 
 .third__box {
@@ -1396,7 +1396,7 @@ body {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
   padding-top: 91px;
-  padding-bottom: 80px;
+  padding-bottom: 65px;
 }
 
 .third__card {
@@ -1436,7 +1436,7 @@ body {
 }
 
 .third__info {
-  margin-left: 34px;
+  margin-left: 40px;
   padding-top: 80px;
 }
 
@@ -1556,9 +1556,13 @@ body {
 }
 
 .fourth__item-box {
+  padding-top: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .fourth__item-element {
@@ -1572,12 +1576,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 .fourth__image-container {
   margin-top: 100px;
+  margin-bottom: -5px;
   position: relative;
   width: 116px;
   height: 116px;
@@ -1628,6 +1633,7 @@ body {
   color: #fffffe;
   width: 470px;
   text-align: center;
+  line-height: 28px;
 }
 
 .fourth__icon-box {
@@ -1637,7 +1643,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 28px;
+  margin-top: 23px;
   margin-bottom: 172px;
 }
 
@@ -1760,6 +1766,7 @@ body {
 
 .fifth__box {
   padding-top: 87px;
+  margin-left: -41px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1790,7 +1797,7 @@ body {
 }
 
 .fifth__name {
-  margin-top: 10px;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1803,6 +1810,7 @@ body {
 }
 
 .fifth__subtitle {
+  margin-top: 27px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -1815,7 +1823,7 @@ body {
 }
 
 .fifth__date {
-  padding-right: 40px;
+  padding-right: 13px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1834,8 +1842,9 @@ body {
 }
 
 .fifth__text {
+  margin-top: -3px;
   display: block;
-  width: 330px;
+  width: 322px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1848,7 +1857,7 @@ body {
 }
 
 .fifth__button {
-  margin-top: 70px;
+  margin-top: 62px;
   padding: 16px 38px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
@@ -1914,8 +1923,8 @@ body {
 
 .sixth__container {
   position: absolute;
-  top: 140px;
-  left: 370px;
+  top: 150px;
+  left: 367px;
   width: 397px;
 }
 
@@ -1952,7 +1961,8 @@ body {
 }
 
 .sixth__form-title {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
+  margin-top: -12px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -1966,7 +1976,7 @@ body {
 
 .sixth__form-input {
   width: 305px;
-  margin-bottom: 30px;
+  margin-bottom: 42px;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1974,6 +1984,7 @@ body {
   border: none;
   border-bottom: 1px solid black;
   font-style: italic;
+  letter-spacing: 1.1px;
 }
 
 .sixth__form-button {
@@ -1981,7 +1992,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   padding: 20px 57px;
-  margin-top: 15px;
+  margin-top: 25px;
   text-transform: uppercase;
 }
 
@@ -2028,8 +2039,8 @@ body {
 }
 
 .footer {
-  padding-top: 58px;
-  padding-bottom: 58px;
+  padding-top: 55px;
+  padding-bottom: 55px;
   background: #000000;
 }
 
@@ -2052,6 +2063,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 50px;
 }
 
 .footer__address-image {
@@ -2124,7 +2136,7 @@ body {
 }
 
 .footer__picture {
-  margin-left: 30px;
+  margin-left: 50px;
   width: 20px;
   height: 14px;
 }
